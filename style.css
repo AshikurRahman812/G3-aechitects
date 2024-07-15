@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Work Sans", sans-serif;
+}
+.header-container{
+    max-width: 1920px;
+    margin: 0 auto;
+    background: rgba(255, 144, 14, 0.1);
+}
+/* navbar part start  */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h3{
+    color: rgb(19, 19, 19);
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    margin-right: 30px;
+}
+.navbar ul li a{
+    color: rgb(66, 66, 66);
+}
+/* navbar part ends */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.banner-content h1{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.banner-content p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+.btn-primary{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    margin-top: 53px;
+}
+.image-container{
+    width: 100%;
+}
+/* Responsive part media queries for mobile device */
+@media only screen and (max-width: 576px){
+    .header-container{
+        width: 100%;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .navbar ul li{
+        margin: 20px;
+    }
+}
+
