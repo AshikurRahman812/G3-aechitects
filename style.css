@@ -35,11 +35,12 @@
     color: rgb(66, 66, 66);
 }
 /* navbar part ends */
+/* Hero section start */
 .banner-content{
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 .banner-content h1{
@@ -70,6 +71,49 @@
 .image-container{
     width: 100%;
 }
+/* Hero section ends */
+
+/* our Futures start */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.Futures{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+   
+}
+.image-contain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.our-futures-text h1{
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+}
+.our-futures-text p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 32px;
+}
+.our-futures-text h1 .quick-list{
+    color: rgb(114, 114, 114);
+}
+.our-futures-text h1 .of our{
+    color: rgb(19, 19, 19);
+}
+.our-futures-text h1 .Futures{
+    color: rgb(255, 144, 14);
+}
+/* our Futures ends */
+
 /* Responsive part media queries for mobile device */
 @media only screen and (max-width: 576px){
     .header-container{
@@ -86,7 +130,46 @@
         margin-top: 20px;
     }
     .navbar ul li{
-        margin: 20px;
+        margin: 18px;
+    }
+
+    /* main part start */
+   main{
+    width: 100%;
+   }
+   .Futures{
+    flex-direction: column;
+   }
+   .image-contain{
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+   }
+   .image-contain{
+    text-align: center;
+   }
+   .our-futures-text{
+    text-align: center;
+   }
+   .btn-primary{
+    margin-bottom: 20px;
+   }
+}
+/* Responsive part media queries for mobile device */
+@media only screen and (min-width: 576px) and (max-width:992px){
+    main{
+        width: 100%;
+    }
+    .Futures{
+        flex-direction: column;
+       }
+    .our-futures-text{
+        text-align: center;
+      
+        }
+    .btn-primary{
+            margin-bottom: 20px;
+           }
+    .image-contain{
+        gap: 10px;
     }
 }
-
