@@ -114,6 +114,77 @@ main{
 }
 /* our Futures ends */
 
+/* features you will part start */
+.Futures-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 40px;
+    }
+#futures-title{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 18px;
+}
+.images-futures img{
+    width: 100%;
+}
+.futures-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.futures h1{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+.futures p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 21px;
+}
+.bg-contain{
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding:30px;
+    margin-top: 24px;
+}
+.bg-contain h4{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+}
+.bg-contain p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+} 
+.btn{
+    color: #ffff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    position: relative;
+    margin-top:-200px;
+    margin-left: -100px;
+    margin-bottom: 30px;
+} 
+.btn h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+.btn h5{
+    font-size: 20px;
+}
+/* features you will part ends */
+
 /* Responsive part media queries for mobile device */
 @media only screen and (max-width: 576px){
     .header-container{
@@ -153,6 +224,27 @@ main{
    .btn-primary{
     margin-bottom: 20px;
    }
+   /* futures part start */
+   .Futures-container{
+    width: 100%;
+   }
+   .futures-part{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .btn{
+    margin-left: 40px;
+    margin-top: 20px;
+   }
+   .futures{
+    text-align: center;
+   }
+   .futures h1{
+    font-size: 35px;
+   }
+   #futures-title{
+    padding-left:0px;
+   }
+  
 }
 /* Responsive part media queries for mobile device */
 @media only screen and (min-width: 576px) and (max-width:992px){
@@ -172,4 +264,23 @@ main{
     .image-contain{
         gap: 10px;
     }
-}
+    .Futures-container{
+        width: 100%;
+       }
+    .futures-part{
+        grid-template-columns: repeat(1, 1fr);
+       }
+    .futures{
+        text-align: center;
+       }
+       #futures-title{
+        padding-left:0px;
+       }
+       .btn{
+        margin-left: 40px;
+        margin-top: 20px;
+       }
+       .image-contain{
+        text-align: center;
+       }
+}   
