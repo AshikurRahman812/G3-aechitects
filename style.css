@@ -185,6 +185,56 @@ main{
 }
 /* features you will part ends */
 
+/* card-section start */
+.some-contain{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.some-contain h1{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 35px;
+    font-weight: 700;
+}
+.some-contain p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 22px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 80px;
+}
+.card{
+    margin-left: 50px;
+    border: 1px solid rgb(255, 144, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+}
+.card h3{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 600;
+}
+.card h4{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* card-section ends */
+
+
 /* Responsive part media queries for mobile device */
 @media only screen and (max-width: 576px){
     .header-container{
