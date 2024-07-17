@@ -267,6 +267,26 @@ main{
 
     filter: grayscale(100%);
 }
+/* footer part start */
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    padding: 30px;
+    margin-top: 150px;
+    text-align: center;
+}
+footer h5{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+/* footer part ends */
 
 /* Responsive part media queries for mobile device */
 @media only screen and (max-width: 576px){
@@ -350,6 +370,9 @@ main{
    .our-eponspos{
     margin-top: 60px;
    }
+   footer{
+    width: 100%;
+   }
 }
 /* Responsive part media queries for mobile device */
 @media only screen and (min-width: 576px) and (max-width:992px){
@@ -405,5 +428,8 @@ main{
        }
        .our-eponspos{
         margin-top: 60px;
+       }
+       footer{
+        width: 100%;
        }
 }   
